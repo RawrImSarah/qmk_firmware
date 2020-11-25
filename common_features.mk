@@ -121,7 +121,7 @@ else
         # This ensures that the EEPROM page buffer fits into RAM
         USE_PROCESS_STACKSIZE = 0x600
         USE_EXCEPTIONS_STACKSIZE = 0x300
-        
+
         SRC += $(PLATFORM_COMMON_DIR)/eeprom_stm32.c
         SRC += $(PLATFORM_COMMON_DIR)/flash_stm32.c
         OPT_DEFS += -DEEPROM_EMU_STM32F042x6
@@ -561,6 +561,10 @@ ifeq ($(strip $(AUTO_SHIFT_ENABLE)), yes)
     ifeq ($(strip $(AUTO_SHIFT_MODIFIERS)), yes)
         OPT_DEFS += -DAUTO_SHIFT_MODIFIERS
     endif
+endif
+
+ifeq ($(strip $(APPLE_FN_ENABLE)), yes)
+    OPT_DEFS += -DAPPLE_FN_ENABLE
 endif
 
 JOYSTICK_ENABLE ?= no
