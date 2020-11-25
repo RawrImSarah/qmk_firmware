@@ -3,12 +3,12 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
+#define MANUFACTURER    IDOBAO
+#define PRODUCT         ID80v2
+#define DESCRIPTION     A 75% hotswap keyboard
 #define VENDOR_ID       0x6964 /* "id" */
 #define PRODUCT_ID      0x0080
 #define DEVICE_VER      0x0001
-#define MANUFACTURER    IDOBAO
-#define PRODUCT         ID80v2
-#define DESCRIPTION     A 75% hotswap keyboard d
 
  /* key matrix size */
 #define MATRIX_ROWS 9
