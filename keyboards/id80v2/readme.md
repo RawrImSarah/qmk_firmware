@@ -9,7 +9,9 @@ A 75% hotswap keyboard from IDOBAO.
 
 Make example for this keyboard (after setting up your build environment):
 
-    make id80v2_mac:iso_via
-    make id80v2:iso_via
+    make id80v2:mac_iso_via
+    make id80v2:mac_iso_nor_via
+    make id80v2:default_iso_via
+    make id80v2:default_ansi_via
 
 See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs).
