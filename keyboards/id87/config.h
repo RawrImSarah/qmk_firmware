@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_DI_PIN E2
 #ifdef RGB_DI_PIN
 #define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 22 /* 16 Bottom 6 top*/
+#define RGBLED_NUM 110 /* 16 Bottom 6 top*/
 #define RGBLIGHT_HUE_STEP 8
 #define RGBLIGHT_SAT_STEP 8
 #define RGBLIGHT_VAL_STEP 8
